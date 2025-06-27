@@ -27,23 +27,27 @@ This will compile and run the project, showing results of several example expres
 
 ### 🧪 Example Expressions
 
+```
 2+3*4         => 14
 (1+2)*3       => 9
 3*(1+2+4)     => 21
+```
+
 📚 How It Works
 
 The parser uses three mutually recursive functions:
 
-expr handles addition
-term handles multiplication
-factor handles digits and parentheses
+- expr handles addition
+- term handles multiplication
+- factor handles digits and parentheses
+
 This structure enforces correct operator precedence naturally.
 
 ### ✅ Next Steps (Ideas)
 
-Add subtraction and division
-Handle multi-digit numbers, and handle whitespace
-Remove unsafe use of head and tail
-Tokenizer
-Parser Monad/Combinator
-Add error messages or AST building
+- Add subtraction and division
+- Handle multi-digit numbers, and handle whitespace
+- Remove unsafe use of head and tail
+- Tokenizer
+- Parser Monad/Combinator
+- Add error messages or AST building
